@@ -1,0 +1,36 @@
+import time
+
+start_time = time.time()
+### the code ###
+#19
+#17
+#13
+#11
+#7
+#5
+#4
+#3
+#3
+#2
+#2
+
+for guess in range (100000000,1000000000,10):
+    cnt = 0
+    for x in range (2,21):
+        if guess % x == 0:
+            
+            cnt = cnt+1
+            #print(cnt)
+            #print("x ",x," guess ", guess," cnt ",cnt)
+            if cnt == 19:
+                print(guess)
+                break 
+                 
+   
+    
+    
+
+
+
+end_time = time.time() - start_time
+print(end_time)
